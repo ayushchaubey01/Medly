@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Medly | Appointments</title>
+</head>
+<body>
+    <header>
+        <nav>
+            <h1>Medly</h1>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="#">Doctors</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="login.html">Login</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <form>
+        <fieldset>
+            <legend>
+                Book Appointment
+            </legend>
+
+             <div>
+            <label for="hospital">Select Hospital</label>
+            <select id="hospital" name="hospital" required>
+                <option value="" selected disabled>Choose the hospital</option>
+                <option value="AIIMS-Delhi">AIIMS Delhi</option>
+                <option value="AIIMS-Deoghar">AIIMS Deoghar</option>
+                <option value="RIIMS-Ranchi">RIIMS Ranchi</option>
+                <option value="RML">RML</option>
+                <option value="Red-Heart-Hospital">Red Heart Hospital</option>
+            </select>
+            </div>
+
+
+            <div>
+            <label for="doctor">Select Doctor</label>
+            <input list="docs" id="doctor" name="doctor" placeholder="Search For Doctors" required>
+
+            <datalist id="docs">
+                <option value="Dr. Jathoth Deepak Naik">
+                <option value="Dr. Aryesh Gouraha">
+                <option value="Dr. Chitresh Ranjan">
+                <option value="Dr. Meet Modi">
+            </datalist>
+            </div>
+           
+
+            <div>
+                <p>Choose Consultation Type</p>
+                <input type="radio" id="online" name="consultation-type" required>
+                <label for="online">Online</label>
+
+                <input type="radio" id="offline" name="consultation-type" required>
+                <label for="offline">Offline</label>
+
+            </div>
+
+            <div>
+                <label for="symptoms">Symptoms</label>
+                <textarea id="symptoms" name="symptoms" rows="5" cols="40" placeholder="Briefly descibe your symptoms..."></textarea>
+            </div>
+
+        </fieldset>
+
+        <fieldset>
+            <legend>Time and Payment</legend>
+            <div>
+                <label for="time">Choose Time</label>
+                <input type="time" id="time" name="time" required>
+            </div>
+
+            <div>
+                <label for="payment">Choose Payment Method</label>
+                <select id="payment" name="payment" required>
+                    <option value="" selected disabled>Choose Payment Method</option>
+                    <option value="UPI">UPI</option>
+                    <option value="Credit-Card">Credit Card</option>
+                    <option value="Debit-Card">Debit Card</option>
+                    <option value="Net-Banking">Net Banking</option>
+                </select>
+            </div>
+        </fieldset>
+
+        <button type="submit">Book</button>
+
+        </form>
+    </main>
+    <footer>
+
+© 2026 Medly
+
+</footer>
+</body>
+</html>
