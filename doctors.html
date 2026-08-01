@@ -3,12 +3,10 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Medly | Book Trusted Doctors Online
-
-</title>
+    <title>Meldy | Doctors</title>
+    <link rel="stylesheet" href="css/doctors.css">
 </head>
 <body>
-    <link rel="stylesheet" href="css/style.css">
     <header class="header">
     <nav class="navbar">
 
@@ -16,7 +14,7 @@
 
     <ul>
 
-        <li><a href="info">Home</a></li>
+        <li><a href="index.html">Home</a></li>
 
         <li><a href="doctors.html">Doctors</a></li>
 
@@ -28,24 +26,26 @@
 
     </nav>
     </header>
-    
+
     <main>
-        <section class="hero">
-            <h2>Find Trusted Doctors Near You</h2>
-            <p>Book appointments in just a few clicks.</p>
-            <button> Search Doctors </button>
-        </section>
+        <div class="sidebar">
+            <ul>
+                <div>
+                <li><a href="#">Search</a></li>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="doctors.html">Popular Doctors</a></li>
+                <li><a href="#">Popular Specilizations</a></li>
+                </div>
+                <div>
+                    <li>
+                        <a href="#">Contact Us</a>
+                    </li>
+                </div>
+            </ul>
+        </div>
 
-        <section class="search">
-            <h2>Search Section</h2>
-        </section>
+        <div class="main-content">
 
-        <section class="specialization">
-            <h2> Popular Specialization </h2>
-        </section>
-
-        <section class="top-doctors">
-            <h2> Top Doctors </h2>
             <div class="doc_cards">
             <div class="doc_card" id="doc_1">
                 <img src="Assets/doc1.jpg" width="200px">
@@ -95,18 +95,8 @@
                 <button href="appointment.html">Book</button>
             </div>
             </div>
-            <div>
-                <a href="doctors.html">More Doctors..</a>
-            </div>
-        </section>
 
-        <section class="testimonials">
-            <h2> Testimonials </h2>
-            <p>Write your testimonials:</p>
-            <form>
-                
-            </form>
-        </section>
+        </div>
     </main>
 
     <footer class="footer">
