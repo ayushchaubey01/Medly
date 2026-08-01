@@ -1,11 +1,10 @@
-@import url('https://googleapis.com');
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap');
 
 h1{
     color:#2563eb;
     font-size: 2rem;
     font-weight: 700;
     text-align: center;
-    margin-right:5rem;
 }
 
 body{
@@ -19,29 +18,23 @@ body{
     box-sizing:border-box;
 }
 
-body{
-
-}
-
-.header{
-
-}
-
 .navbar{
     padding:1rem 2rem;
     border-bottom:1px solid #e6e6e6;
+    justify-content: space-between;
     display: flex;
+    align-items: center;
+    gap:2 rem;
 }
 
 .navbar ul{
-    
     display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap:2rem;
+    list-style-type: none;
+
 }
-.navbar li{
-    margin-left: 1rem;
-    margin-right: 1rem;
-}
- 
 .hero h2{
     font-size: 3rem;
 }
@@ -55,26 +48,24 @@ body{
     border:2px solid #2563eb;
 }
 
-.top-doctors{
-
-}
-
-.search{
-
-}
-
-.specialization{
-
-}
-
-.footer{
-
-}
-
 nav a{
     text-decoration: none;
 }
 
 footer a{
     text-decoration: none;
+}
+
+.top-doctors h2{
+    color: rgb(88, 88, 88);
+    margin:10px;
+}
+.doc_cards{
+    display: flex;
+    flex-wrap:wrap;
+    justify-content: center;
+}
+.doc_card{
+    border: 1px solid grey;
+     flex-basis:200px;   
 }
