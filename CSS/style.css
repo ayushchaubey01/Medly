@@ -1,0 +1,80 @@
+@import url('https://googleapis.com');
+
+h1{
+    color:#2563eb;
+    font-size: 2rem;
+    font-weight: 700;
+    text-align: center;
+    margin-right:5rem;
+}
+
+body{
+    background-color: #f8fafc;
+    font-family: 'Inter',sans-serif;
+}
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+body{
+
+}
+
+.header{
+
+}
+
+.navbar{
+    padding:1rem 2rem;
+    border-bottom:1px solid #e6e6e6;
+    display: flex;
+}
+
+.navbar ul{
+    
+    display: flex;
+}
+.navbar li{
+    margin-left: 1rem;
+    margin-right: 1rem;
+}
+ 
+.hero h2{
+    font-size: 3rem;
+}
+
+.hero p{
+    color: #6b7280;
+}
+.hero{
+    margin-top:2rem;
+    padding:3rem;
+    border:2px solid #2563eb;
+}
+
+.top-doctors{
+
+}
+
+.search{
+
+}
+
+.specialization{
+
+}
+
+.footer{
+
+}
+
+nav a{
+    text-decoration: none;
+}
+
+footer a{
+    text-decoration: none;
+}
