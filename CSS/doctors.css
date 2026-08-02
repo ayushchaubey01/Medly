@@ -61,12 +61,22 @@ a{
     display:flex;
     flex-direction: column;
     background: white;
+    position: relative;
+
 }
-.doc_card img{
+
+.doc_img{
     width:100%;
     height:220px;
     object-fit: cover;
 }
 .footer{
     border-top: #e6e6e6 solid 1px;
+}
+.bell
+{
+    width:20px;
+    position:absolute;
+    top:2px;
+    right:2px;
 }
