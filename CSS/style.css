@@ -1,16 +1,19 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap');
 
-h1{
-    color:#2563eb;
-    font-size: 2rem;
-    font-weight: 700;
+.heading img{
+    width:70px;
 }
-
 body{
     background-color: #f8fafc;
     font-family: 'Inter',sans-serif;
 }
-
+.header
+{
+    position: sticky;
+    top:0;
+    z-index: 100;
+    background-color: #f8fafc;
+}
 *{
     margin:0;
     padding:0;
@@ -18,14 +21,16 @@ body{
 }
 
 .navbar{
-    padding:1rem 2rem;
+    padding:1rem 1rem;
     border-bottom:1px solid #e6e6e6;
     justify-content: space-between;
     display: flex;
     align-items: center;
     gap:2 rem;
 }
-
+a{
+    color: #171717;
+}
 .navbar ul{
     display: flex;
     flex-direction: row;
@@ -34,10 +39,19 @@ body{
     list-style-type: none;
 
 }
+button:hover{
+    background:#1d4ed8
+}
+button:active{
+    transform:scale(.96);
+}
 .hero h2{
     font-size: 3rem;
 }
 
+.doc_card:hover{
+    transform: translateY(-6px);
+}
 .hero p{
     color: #6b7280;
 }
