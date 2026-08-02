@@ -65,5 +65,8 @@ footer a{
     gap: 2px;;
 }
 .doc_card{
-    border: 1px solid grey;  
+    border: 1px solid #e6e6e6;  
+    border-radius: 16px;
+    overflow: hidden;
+    box-shadow:0 4px 12px rgba(0,0,0,.08);
 }
