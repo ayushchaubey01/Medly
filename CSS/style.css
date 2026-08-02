@@ -1,5 +1,32 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap');
 
+@keyframes fadeIn{
+    from{
+        opacity:0.3;
+    }
+
+    to{
+        opacity:1;
+    }
+}
+
+@keyframes slideUp{
+
+from{
+
+transform:translateY(40px);
+
+}
+
+to{
+
+transform:translateY(0);
+
+
+}
+
+}
+
 .heading img{
     width:70px;
 }
@@ -29,7 +56,13 @@ body{
     gap:2 rem;
 }
 a{
+    display:inline-block;
+    font-size: 12px;
     color: #171717;
+    transition:0.2s;
+}
+a:hover{
+    transform:scale(1.03);
 }
 .navbar ul{
     display: flex;
@@ -40,7 +73,7 @@ a{
 
 }
 button:hover{
-    background:#1d4ed8
+    background:#10B981;
 }
 button:active{
     transform:scale(.96);
@@ -56,10 +89,15 @@ button:active{
     color: #6b7280;
 }
 .hero{
-    margin-top:2rem;
-    padding:3rem;
-    border:2px solid #2563eb;
+    padding:2rem;
+    border:2px solid #10B981;
+    background-image: url('../Assets/hero_seamless.jpeg');
+    background-size: 300px;
+    background-repeat: repeat;
+    background-attachment: fixed;
+    background-position: center;
 }
+
 
 nav a{
     text-decoration: none;
@@ -70,7 +108,7 @@ footer a{
 }
 
 .top-doctors h2{
-    color: rgb(88, 88, 88);
+    color: #10B981;
     margin:10px;
 }
 .doc_cards{
@@ -83,4 +121,7 @@ footer a{
     border-radius: 16px;
     overflow: hidden;
     box-shadow:0 4px 12px rgba(0,0,0,.08);
+    transition: 0.3s ease;
+    animation:slideUp 1.5s ease;
 }
+
