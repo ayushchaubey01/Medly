@@ -1,5 +1,24 @@
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap');
+@font-face{
+    font-family: "League Spartan";
+    src:url(../fonts/LeagueSpartan-ExtraBold.ttf) format("truetype");
+}
 
+@font-face{
+    font-family: "Manrope_reg";
+    src:url(../fonts/Manrope-Light.ttf)
+}
+@font-face{
+    font-family: "Geist_reg";
+    src:url(../fonts/Geist-Regular.ttf)
+}
+@font-face{
+    font-family:"Thin";
+    src:url(../fonts/Manrope-ExtraLight.ttf)
+}
+@font-face{
+    font-family:"Secondary";
+    src:url(../fonts/GeneralSans-Regular.otf)
+}
 @keyframes fadeIn{
     from{
         opacity:0.3;
@@ -27,19 +46,27 @@ transform:translateY(0);
 
 }
 
+.container{
+    width:100%;
+    padding:0 2rem;
+}
 .heading img{
+    display: block;
     width:70px;
 }
+.heading{
+    margin-left:5rem;
+}
 body{
-    background-color: #f8fafc;
-    font-family: 'Inter',sans-serif;
+    background-color: #FAFAFA;
+    font-family: 'Geist_reg',sans-serif;
 }
 .header
 {
     position: sticky;
     top:0;
     z-index: 100;
-    background-color: #f8fafc;
+    background-color: #FAFAFA;
 }
 *{
     margin:0;
@@ -48,56 +75,117 @@ body{
 }
 
 .navbar{
-    padding:1rem 1rem;
-    border-bottom:1px solid #e6e6e6;
     justify-content: space-between;
     display: flex;
     align-items: center;
-    gap:2 rem;
+    gap:2rem;
+    border-bottom:1px solid #EAEAEA;
+    box-shadow:0 4px 12px rgba(0,0,0,.08);
+}
+.navbar ul{
+    align-items: center;
+    margin-right: 150px;
+    gap:2rem;
+}
+
+#login_button{
+    margin-left: 10rem;
+}
+.navbar li{
+    align-items: center;
+}
+.navbar a{
+    display: flex;
+    font-size: 8px;
+    font-weight: 500;
+}
+
+ a{
+    display:inline-block;
+    color: #525252;
+    transition:0.1s ease;
+}
+p{
+    color:#171717;
 }
 a{
-    display:inline-block;
-    font-size: 12px;
-    color: #171717;
-    transition:0.2s;
+    color:#525252;
 }
 a:hover{
     transform:scale(1.03);
+    color:#10B981;
+}
+
+a:not(.heading):hover{
+    border-bottom:1px solid #10B981;
 }
 .navbar ul{
+    padding-right:10px;
     display: flex;
     flex-direction: row;
     align-items: center;
-    gap:2rem;
     list-style-type: none;
+    gap:0.7rem;
 
 }
-button:hover{
-    background:#10B981;
-}
-button:active{
-    transform:scale(.96);
-}
+
 .hero h2{
+    font-family: "League Spartan", sans-serif;
+    color:#10B981;
+    font-weight: 800;
+    letter-spacing: -0.04em;
     font-size: 3rem;
-}
-
-.doc_card:hover{
-    transform: translateY(-6px);
+    shadow:0 4px 12px rgba(0,0,0,.08);
+    z-index:100;
+    text-shadow:0 12px 30px rgba(0,0,0,.18);
 }
 .hero p{
-    color: #6b7280;
+    font-family:"Secondary",sans-serif;
+    color:aliceblue;
+    font-size:1.35rem;
+
+    font-weight:400;
+
+    max-width:550px;
+
+    line-height:1.6;
+    z-index:100;
+
 }
+.hero button{
+    width:128px;
+    height:28px;
+    border:none;
+    border-radius: 14px;
+
+    font-family:"Geist_reg";
+    font-weight:500;
+
+    color:#171717;
+    margin-top:0.7rem;
+    transition:0.1s ease;
+    z-index:100;
+}
+
+.hero button:hover
+{
+    transform:translateY(-1px);
+    background:#064E3B;
+    text-shadow:0 12px 30px rgba(0,0,0,.18);
+}
+.doc_card:hover{
+    transform: translateY(-3px);
+    
+}
+
 .hero{
-    padding:2rem;
-    border:2px solid #10B981;
-    background-image: url('../Assets/hero_seamless.jpeg');
-    background-size: 300px;
-    background-repeat: repeat;
+    padding:3rem;
+    background-image: url('../Assets/seamless.png');
+    background-size: 100%;
+    background-repeat:no-repeat;
     background-attachment: fixed;
     background-position: center;
 }
-
 
 nav a{
     text-decoration: none;
@@ -112,12 +200,13 @@ footer a{
     margin:10px;
 }
 .doc_cards{
+    color:#FFFFFF;
     display:grid;
-    grid-template-columns:repeat(auto-fit,minmax(200px,1fr));
+    grid-template-columns:repeat(auto-fit,minmax(150px,1fr));
     gap: 2px;;
 }
 .doc_card{
-    border: 1px solid #e6e6e6;  
+    border: 1px solid #EAEAEA;  
     border-radius: 16px;
     overflow: hidden;
     box-shadow:0 4px 12px rgba(0,0,0,.08);
