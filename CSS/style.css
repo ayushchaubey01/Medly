@@ -29,13 +29,16 @@
     }
 }
 
-@keyframes scrollLeft{
+@keyframes scroll{
+
     from{
         transform:translateX(0);
     }
-    from{
+
+    to{
         transform:translateX(-50%);
     }
+
 }
 @keyframes slideUp{
 
@@ -224,23 +227,44 @@ a:not(.heading):hover{
     display:flex;
     gap:2rem;
     width:max-content;
-    animation: scrollLeft 18s Linear infinite;
+    animation:scroll 20s linear infinite;
 }
 
 .speciality_wrapper{
     overflow: hidden;
     width:100%;
 }
+.speciality_pngs:hover{
+    animation-play-state: paused;
+}
+.speciality_pngs a:hover
+{
+    color:#10B981;
+    border-bottom:1px solid #10B981;
+    transition: none;
+}
+.speciality-card{
+    margin-top: 2rem;
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+    justify-content:center;
+    gap:.5rem;
+    min-width:120px;
+}
 
 .top-doctors h2{
     color: #10B981;
-    margin:10px;
+    margin-left:1rem;
+    margin-top: 4rem;
+    margin-bottom:2rem;
+    font-family:"Geist_reg";
 }
 .doc_cards{
     color:#FFFFFF;
     display:grid;
     grid-template-columns:repeat(auto-fit,minmax(150px,1fr));
-    gap: 2px;;
+    gap: 1rem;
 }
 .doc_card{
     border: 1px solid #EAEAEA;  
