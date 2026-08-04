@@ -9,6 +9,124 @@ body{
     background-color: #f8fafc;
     font-family: 'Inter',sans-serif;
 }
+.header{
+    position:sticky;
+    top:0;
+    z-index:100;
+    background-color:#FAFAFA;
+}
+
+.navbar{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    height:2rem;
+    gap:2rem;
+
+    border-bottom:1px solid #EAEAEA;
+    box-shadow:0 4px 12px rgba(0,0,0,.08);
+
+    background:#FAFAFA;
+}
+
+.heading{
+    margin-left:5rem;
+}
+
+.heading img{
+    display:block;
+    width:70px;
+}
+
+.navbar ul{
+    display:flex;
+    align-items:center;
+
+    list-style:none;
+
+    margin-right:150px;
+    padding-right:10px;
+
+    gap:.7rem;
+}
+
+.navbar li{
+    display:flex;
+    align-items:center;
+}
+
+.navbar a{
+    display:inline-flex;
+    align-items:center;
+
+    text-decoration:none;
+
+    color:#525252;
+
+    font-family:"Geist_reg",sans-serif;
+    font-size:15px;
+    font-weight:500;
+
+    transition:.15s ease;
+}
+
+.navbar a:hover{
+    color:#10B981;
+}
+
+a:not(.heading):hover{
+    border-bottom:1px solid #10B981;
+}
+
+#login_button{
+    margin-left:10rem;
+
+    padding:4px 14px;
+
+    border-radius:999px;
+
+    background:#10B981;
+
+    color:#FAFAFA;
+
+    opacity:.8;
+}
+
+#login_button:hover{
+    background:#059669;
+    color:#FAFAFA;
+
+    transform:translateY(-1px);
+
+    border-bottom:none;
+}
+
+#login_button{
+    color:#EAEAEA;
+    margin-left: 10rem;
+    padding:3.4px;
+    border-radius: 24px;
+    background-color: #10B981;
+    opacity: 0.7;
+}
+#login_button :hover{
+      background:#059669;
+
+
+    transform:translateY(-1px);
+}
+.navbar li{
+    align-items: center;
+}
+.navbar a{
+    display: flex;
+    font-size: 8px;
+    font-weight: 500;
+}
+nav a{
+    text-decoration: none;
+}
+
 .heading{
     color: #2563eb;
     font-size: 2rem;
@@ -19,19 +137,6 @@ body{
     position:sticky;
     top:0;
     z-index:1000;
-}
-.navbar{
-    display:flex;
-    justify-content: space-between;
-    align-items: center;
-    border-bottom: #e6e6e6 solid 1px;
-    width:100%;
-    background:#f8fafc;
-}
-.navbar ul{
-    display:flex;
-    gap:20px;
-    padding:15px;
 }
 
 ul{

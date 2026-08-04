@@ -217,6 +217,7 @@ a:not(.heading):hover{
     margin-top:3rem;
     font-weight: 800;
     font-family: "Manrope_reg";
+    color: #171717;
 }
 
 .speciality h2{
@@ -254,16 +255,18 @@ a:not(.heading):hover{
 }
 
 .top-doctors h2{
-    color: #10B981;
     margin-left:1rem;
-    margin-top: 4rem;
-    margin-bottom:2rem;
-    font-family:"Geist_reg";
+    margin-top: 3rem;
+    margin-bottom:1.5rem;
+    font-family:"Manrope_reg";
+    font-weight: 800;
+    color: #171717;
 }
+
 .doc_cards{
     color:#FFFFFF;
     display:grid;
-    grid-template-columns:repeat(auto-fit,minmax(150px,1fr));
+    grid-template-columns:repeat(auto-fit,minmax(170px,1fr));
     gap: 1rem;
 }
 .doc_card{
@@ -273,6 +276,18 @@ a:not(.heading):hover{
     box-shadow:0 4px 12px rgba(0,0,0,.08);
     transition: 0.3s ease;
     animation:slideUp 1.5s ease;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-self: center;
+}
+
+.doc_card h3{
+    font-family:"Geist_reg";
+    font-weight:600;
+    color: #171717;
+    font-size:16px;
 }
 
 .doctor-img{
