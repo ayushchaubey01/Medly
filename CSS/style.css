@@ -29,6 +29,14 @@
     }
 }
 
+@keyframes scrollLeft{
+    from{
+        transform:translateX(0);
+    }
+    from{
+        transform:translateX(-50%);
+    }
+}
 @keyframes slideUp{
 
 from{
@@ -204,14 +212,24 @@ a:not(.heading):hover{
 
 .speciality{
     margin-top:3rem;
-    margin-left:0.8rem;
     font-weight: 800;
     font-family: "Manrope_reg";
 }
 
+.speciality h2{
+    margin-left: 3rem;
+}
+
 .speciality_pngs{
     display:flex;
-    
+    gap:2rem;
+    width:max-content;
+    animation: scrollLeft 18s Linear infinite;
+}
+
+.speciality_wrapper{
+    overflow: hidden;
+    width:100%;
 }
 
 .top-doctors h2{
@@ -231,6 +249,12 @@ a:not(.heading):hover{
     box-shadow:0 4px 12px rgba(0,0,0,.08);
     transition: 0.3s ease;
     animation:slideUp 1.5s ease;
+}
+
+.doctor-img{
+    width:100%;
+    height:220px;
+    object-fit: cover;
 }
 
 .footer{

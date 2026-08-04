@@ -13,21 +13,24 @@ const doctors=[
         name:"Dr. Stephen Hawkins",
         specialisation:"Cardiologist",
         fee:1000,
-        experience:"5 years"
+        experience:"5 years",
+        image:"../Assets/doc1.jpg"
 
     },
     {
         name:"Dr. Gabrianna Tiffany",
         specialisation:"Neurologist",
         fee:5000,
-        experience:"10 years"
+        experience:"10 years",
+        image:"../Assets/doc2.jpg"
 
     },
     {
         name:"Dr. Mysoginst tate",
         specialisation:"Dermatologist",
         fee:4000,
-        experience:"15 years"
+        experience:"15 years",
+        image:"../Assets/doc3.jpg"
 
     }
 ];
@@ -53,10 +56,11 @@ for(let x=0;x<doctors.length;x++){
     card.classList.add("doc_card");
 
     card.innerHTML=`
+    <img src="${doctor.image}" class="doctor-img"><img>
     <h3>${doctor.name}</h3>
     <p>${doctor.specialisation}</p>
     <p>₹${doctor.fee}</p>
-    <p>${doctor.experience}</p>
+    <p>${doctor.experience} Experience</p>
     <button>Book</button>
     `;
 
