@@ -91,9 +91,10 @@ body{
 #login_button{
     color:#EAEAEA;
     margin-left: 10rem;
-    padding:3px;
+    padding:3.4px;
     border-radius: 24px;
     background-color: #10B981;
+    opacity: 0.7;
 }
 #login_button :hover{
       background:#059669;
@@ -206,9 +207,12 @@ a:not(.heading):hover{
     margin-left:0.8rem;
     font-weight: 800;
     font-family: "Manrope_reg";
-
 }
 
+.speciality_pngs{
+    display:flex;
+    
+}
 
 .top-doctors h2{
     color: #10B981;
